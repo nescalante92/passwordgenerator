@@ -1,46 +1,131 @@
-// Assignment constants/variables to each checkbox option = Global DOM
-const generateBtn = document.querySelector("#generate");
-const boxCharacter = document.querySelector("#numberOfCharacters");
-const boxUpper = document.querySelector("#IncludeUppercaseLetters");
-const boxLower = document.querySelector("#IncludeLowercaseLetters");
-const boxNumber= document.querySelector("#IncludeNumbers");
-const boxSymbol = document.querySelector("#IncludeSymbols");
+// The constant variables apply to the DOM and connect to the input functions
+// This includes the password textbox,checkboxes and the generate button
+const passwordEl = document.getElementById('#passwordinput')
+const characterEl = document.getElementById('#includeCharacter');
+const upperEl = document.getElementById('#includeUpper');
+const lowerEl = document.getElementById('#includeLower');
+const numberEl = document.getElementById('#includeNumber');
+const symbolEl = document.getElementById('#includeSymbol');
+const generateBtn = document.getElementById('#generate');
 
-const boxUpper="A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z".split;
-const boxLower="a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z".split;
-const boxNumber="0,1,2,3,4,5,6,7,8,9".split;
-const boxSymbol="~!@#$%^&*()_-+={}[]\|;:<>?,./*".split;
+//var randomObject = groups all the Upper/Lower/Number/Symbol Functions together
+//I researched how to use Character Codes to reduce amount of Arrays I need and to keep code cleaner
+// Math.random ()= generates a random rumber within perameter
+//Math.floor ()= helps to round numbers
 
-// I researched how to add character codes to add characters from predetermind list in order to avoid using arrays
-// Concat = connect arrays together
-// These variables organize and list all possible characters within their category
-const boxUpper = (65,90)
-const boxlower = (97,122)
-const boxlower = (48,57)
-const boxSymbol = (33, 47).concat(58,64).concat(91,96).concat(123,126)
+// var randomObject ={
+//   upper: getUpper,
+//   lower: getLower,
+//   number: getNumber,
+//   symbol: getSymbol,
+// };
 
-// Write password to the #password input
-function writePassword() {
-  var passwordText = document.querySelector("#password").value = password;
-  var password = generatePassword();
- 
-  passwordText.value = password;
+
+
+
+//Add eventListender to respond to when specific items are clicked on or selected
+
+
+
+
+
+
+
+
+
+//Functions provide the range of letter/number/symbol values that that will be randomly produced
+function getUpper() {
+  const upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  return upper[Math.floor(Math.random() * upper.length)];
+}
+  console.log(getUpper());
+
+
+
+function getLower() {
+  const lower = 'abcdefghijklmnopqrstuvwxyz';
+  return lower[Math.floor(Math.random() * lower.length)];
+}
+  console.log(getLower());
+
+
+function getNumber() {
+  const number = '0123456789';
+  return number[Math.floor(Math.random() * number.length)];
+}
+  console.log(getNumber());
+
+
+
+function getSymbol() {
+  const symbol = '!@#$%^&*(){}[]=<>';
+  return symbol[Math.floor(Math.random() * symbol.length)];
+}
+  console.log(getSymbol());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function writePassword() {
+//   if (generateBtn)
+//   console.log("password textbox is working");
+
+
+
+//   const password = generatePassword();7
+
+//   passwordText.value = password;
+
 
 // Loop to ranomly choose password
-for (var i = 0; i )
-  
+
+
 
 
 // I researched how to add character codes to keep codes instead of using an array
-function generatePassword(boxCharacter,boxUpper,boxLower,boxNumber,boxSymbol ) {
-  String
-
-  
-  
 
 
 
 
-
-Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+// Add event listener to generate button

@@ -17,18 +17,14 @@ body {
   background-color: #f9fbfd;
 }
 /* Cutomize and Organize Section Container*/
-.input{
-    display:flex;
-    justify-content:center;
-    flex-direction: column;
-    row-gap: 1rem;
-    column-gap: 3rem;
-    font-family: Arial, Helvetica, sans-serif;
-    cursor: pointer;
+.input {
+  display:grid;
+  justify-content: flex-start;
+  flex-direction: column;
 }
-
-    
-
+.numberOfCharacters {
+  width:auto;
+}
 
 .wrapper {
   padding-top: 30px;
@@ -53,6 +49,7 @@ header {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+
 }
 
 .card-header::after {
@@ -101,7 +98,7 @@ header {
   cursor: pointer;
 }
 
-button[disabled] {
+button[enable] {
   cursor: pointer;
   background: #c0c7cf;
 }
