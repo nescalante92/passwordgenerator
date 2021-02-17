@@ -29,6 +29,9 @@ the User can select an option between lowercase, uppercase, numeric, and/or spec
 --------------------------------------------------------------------
 
 ## Links
+- [Link to Github Profile] (https://github.com/nescalante92/passwordgenerator)
+
+- [Link to Deployed Website] (https://nescalante92.github.io/passwordgenerator/)
 
 
 ## Mockup Image
